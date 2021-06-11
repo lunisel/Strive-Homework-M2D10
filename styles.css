@@ -28,3 +28,26 @@ div#line{
 .navbar-dark{
     background-color: #2c2c2c;
 }
+
+div.col-9 span{
+    font-size: 15px;
+    color: white;
+}
+
+footer{
+    background-color: #262626;
+}
+
+footer div div.row.first{
+    max-height: 1.5rem;
+}
+
+
+div.footer-container{
+    background-color: #2f2f2f;
+    height: 4.5rem;
+}
+
+div.footer-end{
+    color: white;
+}
