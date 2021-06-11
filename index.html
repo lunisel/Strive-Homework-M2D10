@@ -17,7 +17,7 @@
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
       <div class="container"> 
         <a class="navbar-brand" href="#">
             <img src="/gog-assets/gog-com.png" alt="gog logo" class="img-fluid">
@@ -93,10 +93,10 @@
           </ul>
 
           <form class="form-inline my-2 my-lg-0">
-            <span style="color: white;" class="mr-3"><i class="bi bi-bell"></i> 0 </span>
-            <span style="color: white;" class="mr-3"><i class="bi bi-people"></i> 0 </span>
-            <span style="color: white;" class="mr-3"><i class="bi bi-cart3"></i> 0 </span>
-            <span style="color: white;"><i class="bi bi-search"></i></span>
+            <span style="color: #bfbfbf; font-weight: 600;" class="mr-4"><i class="bi bi-bell"></i> 0 </span>
+            <span style="color: #bfbfbf; font-weight: 600;" class="mr-4"><i class="bi bi-people"></i> 0 </span>
+            <span style="color: #bfbfbf; font-weight: 600;" class="mr-4"><i class="bi bi-cart3"></i> 0 </span>
+            <span style="color: #bfbfbf; font-weight: 600;"><i class="bi bi-search"></i></span>
           </form>
 
         </div>
@@ -105,47 +105,87 @@
 
     <div class="container">
 
-        <div id="highlight">
-            <i class="fas fa-highlighter"></i>
-            <span>Highlights</span>
-            <hr>
+        <div class="mt-2 d-flex align-items-center">
+            <i class="fas fa-highlighter pr-2" style="color: #404040;"></i>
+            <span style="color: #0c0c0c; font-weight: 600;">Highlights</span>
         </div>
 
+        <hr class="mt-2 mb-3">
+
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
+
 
             <div class="carousel-inner">
 
               <div class="carousel-item active">
                 <img src="/gog-assets/carousel1.jpg" class="d-block w-100" alt="first image">
-                <div class="carousel-caption d-none d-md-block">
+
+                <div class="carousel-caption d-none d-md-flex p-0 justify-content-between">
                   <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+
+                  <div class="price-addtocart">
+                      <h5 class="d-inline-flex">$56.99</h5>
+                      <button class="btn-success" id="add-to-cart"><i class="bi bi-cart-plus"></i>Add to cart</button>
+                  </div>
+
                 </div>
+
               </div>
 
               <div class="carousel-item">
                 <img src="/gog-assets/carousel2.jpg" class="d-block w-100" alt="second image">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-flex p-0 justify-content-between">
                   <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  
+                  <div class="price-addtocart">
+                    <h5 class="d-inline-flex">$56.99</h5>
+                    <button class="btn-success" id="add-to-cart"><i class="bi bi-cart-plus"></i>Add to cart</button>
+                  </div>
+
                 </div>
               </div>
 
               <div class="carousel-item">
                 <img src="/gog-assets/carousel3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-flex p-0 justify-content-between">
                   <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  
+                  <div class="price-addtocart">
+                    <h5 class="d-inline-flex">$56.99</h5>
+                    <button class="btn-success" id="add-to-cart"><i class="bi bi-cart-plus"></i>Add to cart</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="/gog-assets/carousel5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-flex p-0 justify-content-between">
+                  <h5>Fourth slide label</h5>
+                  
+                  <div class="price-addtocart">
+                    <h5 class="d-inline-flex">$56.99</h5>
+                    <button class="btn-success" id="add-to-cart"><i class="bi bi-cart-plus"></i>Add to cart</button>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="/gog-assets/carousel6.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-flex p-0 justify-content-between">
+                  <h5>Fifth slide label</h5>
+                  
+                  <div class="price-addtocart">
+                    <h5 class="d-inline-flex">$56.99</h5>
+                    <button class="btn-success" id="add-to-cart"><i class="bi bi-cart-plus"></i>Add to cart</button>
+                  </div>
+
                 </div>
               </div>
 
         </div>
+
 
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -158,40 +198,111 @@
 
           </div>
 
-          <div class="row my-5" id="under-carousel">
+          <ol class="carousel-indicators mt-2">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+          </ol>
+
+          
+
+          <div class="row my-3" id="under-carousel">
 
             <div class="col-3">
-                <div class="card">
+                <div class="card" style="height: 14rem;">
                     <img src="/gog-assets/tile (1).jpg" class="card-img-top">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-body p-2">
+                      <p class="card-text " style="font-size: 1rem;">Soul Saga</p>
+
+                      <div class="row d-flex justify-content-between align-items-end" style="height: 100%;">
+
+                          <div class="col-4">
+                            <i style="color: #999999;" class="fab fa-windows"></i>
+                          </div>
+
+                          <div class="col-8 text-right">
+                            <p class="card-text" style="font-size: 1rem; font-weight: 600;">$ 19.99</p>
+                        </div>
+
+                      </div>
+
                     </div>
                   </div>
             </div>
 
             <div class="col-3">
-                <div class="card">
+                <div class="card" style="height: 14rem;">
                     <img src="/gog-assets/tile (2).jpg" class="card-img-top">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-body p-2">
+                      <p class="card-text" style="font-size: 1rem;">RollerCoaster Tycoon</p>
+
+                      <div class="row d-flex justify-content-between align-items-end" style="height: 100%;">
+
+                        <div class="col-4">
+                          <i style="color: #999999;" class="fab fa-windows"></i>
+                          <i style="color: #999999;" class="fab fa-apple"></i>
+                          <i style="color: #999999;" class="fab fa-linux"></i>
+                        </div>
+
+                        <div class="col-8 text-right">
+                            <span class="badge badge-secondary">-73%</span>
+                          <p class="card-text d-inline" style="font-size: 1rem; font-weight: 600;">$ 19.99</p>
+                      </div>
+
+                    </div>
+
                     </div>
                   </div>
             </div>
 
             <div class="col-3">
-                <div class="card">
+                <div class="card" style="height: 14rem;">
                     <img src="/gog-assets/tile (10).jpg" class="card-img-top">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-body p-2">
+                      <p class="card-text" style="font-size: 1rem;">Armed and Dangerous</p>
+
+                      <div class="row d-flex justify-content-between align-items-end" style="height: 100%;">
+
+                        <div class="col-4">
+                          <i style="color: #999999;" class="fab fa-windows"></i>
+                        </div>
+
+                        <div class="col-8 text-right">
+                            <span class="badge badge-secondary">-25%</span>
+                          <p class="card-text d-inline" style="font-size: 1rem; font-weight: 600;">$ 14.99</p>
+                      </div>
+
+                    </div>
+
+
                     </div>
                   </div>
             </div>
 
             <div class="col-3">
-                <div class="card">
+                <div class="card" style="height: 14rem;">
                     <img src="/gog-assets/tile (12).jpg" class="card-img-top">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-body p-2">
+                      <p class="card-text" style="font-size: 1rem;">Dark Quest</p>
+
+                      <div class="row d-flex justify-content-between align-items-end" style="height: 100%;">
+
+                        <div class="col-4">
+                          <i style="color: #999999;" class="fab fa-windows"></i>
+                          <i style="color: #999999;" class="fab fa-apple"></i>
+                          <i style="color: #999999;" class="fab fa-linux"></i>
+                        </div>
+
+                        <div class="col-8 text-right">
+                            <span class="badge badge-secondary">-10%</span>
+                          <p class="card-text d-inline" style="font-size: 1rem; font-weight: 600;">$ 13.49</p>
+                      </div>
+
+                    </div>
+
+
                     </div>
                 </div>
             </div>
@@ -202,17 +313,17 @@
 
         <hr>
 
-    <div class="container">
+    <div class="container" id="galaxy-line">
 
-        <div class="row">
+        <div class="row d-flex justify-content-between">
 
-            <div class="col-9">
-                <p>We are GOG.COM, the <span style="color: purple;">DRM-free</span> home for a <span style="color: purple;">curated section</span> of games. This place was <span style="color: purple;">made for gamers,</span> so make yourself at home.</p>
+            <div class="col-9 d-flex mt-1">
+                <p class="mb-0">We are GOG.COM, the <span style="color: #924b96; font-weight: 700;">DRM-free</span> home for a <span style="color: #924b96; font-weight: 700;">curated section</span> of games. This place was <span style="color: #924b96; font-weight: 700;">made for gamers,</span> so make yourself at home.</p>
             </div>
 
-            <div class="col-3" id="purple-text">
-                <div id="line"></div>
-                <span style="color: purple;"><img src="https://img.utdstc.com/icon/c71/188/c711881be2c23503137c680403b4d0342fce779521fa4490e09d0c81105d6bc2:200" class="img-fluid"> The new GOG GALAXY 2.0</span>
+            <div class="col-3 d-flex" id="purple-text">
+                <div id="line" class="mr-4"></div>
+                <span class="mt-1" style="color: #924b96; font-weight: 700;"><img src="https://img.utdstc.com/icon/c71/188/c711881be2c23503137c680403b4d0342fce779521fa4490e09d0c81105d6bc2:200" class="img-fluid mr-2" style="width: 20px; margin-top: -0.25rem;"> The new GOG GALAXY 2.0</span>
             </div>
 
         </div>

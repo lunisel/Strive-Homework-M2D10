@@ -9,7 +9,8 @@ nav div a img {
 
 li a{
     font-size: 0.8rem;
-    font-weight: 300;
+    font-weight: 600;
+    color: #bfbfbf;
 }
 
 img#avatar{
@@ -19,10 +20,36 @@ img#avatar{
     margin-bottom: 2px;
 }
 
+div.carousel-caption{
+    text-align: left;
+    font-weight: 600;
+}
+
+ol.carousel-indicators{
+    position: relative;
+}
+
+span.badge{
+    display: inline-flex;
+    align-items: center;
+    background-color: #78387b;
+    height: 2rem;
+    font-size: 100%;
+    
+}
+
 div#line{
     width: 1px;
     height: 2rem;
     border-left: solid black 1px;
+}
+
+#galaxy-line div div span{
+    font-size: 14px;
+}
+
+#galaxy-line div div p{
+    font-size: 14px;
 }
 
 .navbar-dark{
