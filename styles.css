@@ -1,0 +1,30 @@
+body{
+    background-color: #d8d8d8;
+}
+
+nav div a img {
+    width: 2rem;
+    background-color: white;
+}
+
+li a{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+img#avatar{
+    border-radius: 60%;
+    margin-right: 5px;
+    width: 1rem;
+    margin-bottom: 2px;
+}
+
+div#line{
+    width: 1px;
+    height: 2rem;
+    border-left: solid black 1px;
+}
+
+.navbar-dark{
+    background-color: #2c2c2c;
+}
